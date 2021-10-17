@@ -1,0 +1,75 @@
+main {
+  background: url("../img/member-bg.jpeg") no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form.register {
+  width: 40vw;
+  height: auto;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    width: 50%;
+    text-align: center;
+    margin: 5px;
+  }
+  div.group {
+    padding: 5px;
+    label {
+      font-size: 1.5rem;
+      margin: 0 5px;
+    }
+    input {
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      line-height: 2;
+    }
+  }
+  div.btn {
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    button {
+      border: none;
+      margin: 3px 10px;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: black;
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  form.register {
+    margin: 5px;
+    width: 70vw;
+    height: auto;
+    h2 {
+      font-size: 1.5rem;
+    }
+    div.group {
+      label {
+        font-size: 1rem;
+      }
+      input {
+        line-height: 1;
+      }
+    }
+    div.btn {
+      button {
+        font-size: 1rem;
+      }
+    }
+  }
+}

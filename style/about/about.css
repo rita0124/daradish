@@ -1,0 +1,67 @@
+section.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about div.text {
+  margin: 10px;
+  -webkit-box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.5);
+}
+
+section.about div.text h4 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+section.about div.text p {
+  margin: 20px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+section.about div.pic {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about div.pic h4 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+section.about div.pic img {
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  section.about div.text h4 {
+    font-size: 1.2rem;
+  }
+  section.about div.text p {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  section.about div.pic img {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,31 @@
+section.cover {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/cover2.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-block: 2vw;
+  }
+  section.product {
+    display: grid;
+    grid-gap: 5vw;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    div.box {
+      background-color: rgb(26, 26, 26);
+      margin: 3vw;
+      padding: 1.5vw;
+      img {
+        width: 100%;
+      }
+      p {
+        color: white;
+        text-align: center;
+      }
+    }
+    div.box:hover {
+      transform: scale(1.1);
+    }
+  }

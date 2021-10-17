@@ -1,0 +1,162 @@
+@charset "UTF-8";
+main section.background {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url("../img/蘿蔔.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.background div.frame {
+  background-color: rgba(51, 51, 51, 0.6);
+  border: 5px solid rgba(233, 227, 178, 0.2);
+  min-height: 30%;
+  width: 35%;
+  position: absolute;
+  z-index: 1;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+main section.background div.frame h3 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bolder;
+}
+
+main section.background div.frame p {
+  font-size: 2rem;
+  color: white;
+}
+
+main section.background div.frame button.start {
+  padding: 5px;
+  font-size: 1rem;
+  background-color: #bc6740;
+  width: 35%;
+  color: #fffdfd;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+main section.background div.frame button.start:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main section.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main section.second h2 {
+  font-size: 1.8rem;
+  margin: 1.5rem 0rem;
+}
+
+main section.second .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 70vh;
+}
+
+main section.second .cards div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  padding: 1rem;
+}
+
+main section.second .cards div.card img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+
+main section.second .cards div.card h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+}
+
+main section.second .cards div.card a {
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: #157018;
+  color: white;
+  padding: 0.5rem 0.5rem;
+}
+
+main section.second .cards div.card a:hover {
+  background-color: #f37e00;
+}
+
+@media screen and (max-width: 770px) {
+  main section.background div.frame h3 {
+    font-size: 1.8rem;
+    margin: 0.5rem;
+  }
+  main section.background div.frame p {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
