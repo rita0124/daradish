@@ -1,0 +1,115 @@
+main {
+    section.background {
+      min-height: 90vh;
+      width: 100%;
+      background-image: url("../img/蘿蔔.jpg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      z-index: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      div.frame {
+        background-color: rgba(51, 51, 51, 0.6);
+        border: 5px solid rgba(233, 227, 178, 0.2);
+        min-height: 30%;
+        width: 35%;
+        position: absolute;
+        z-index: 1;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        h3 {
+          font-size: 3rem;
+          color: white;
+          font-weight: bolder;
+        }
+        p {
+          font-size: 2rem;
+          color: white;
+        }
+        button.start {
+          padding: 5px;
+          font-size: 1rem;
+          background-color: #bc6740;
+          width: 35%;
+          color: rgb(255, 253, 253);
+          border: none;
+          border-radius: 2rem;
+          cursor: pointer;
+          transition: all 0.25s ease;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      } 
+    }
+    section.second {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      h2 {
+        font-size: 1.8rem;
+        margin: 1.5rem 0rem;
+      }
+      .cards {
+        display: flex;
+        // border: 5px solid red;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: space-around;
+        min-height: 70vh;
+        div.card {
+          // border: 2px solid blue;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          flex: 1 1 300px;
+          padding: 1rem;
+          img {
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+          }
+          h4 {
+            font-size: 1.5rem;
+            margin: 1rem 0rem;
+          }
+          a {
+            text-decoration: none;
+            font-size: 1rem;
+            background-color: #157018;
+            color: white;
+            padding: 0.5rem 0.5rem;
+          }
+          a:hover {
+            background-color: rgb(243, 126, 0);
+          }
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 770px) {
+  main {
+    section.background {
+      div.frame {
+        h3 {
+          font-size: 1.8rem;
+          margin: 0.5rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  } 
+}
